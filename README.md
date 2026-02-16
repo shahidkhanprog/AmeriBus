@@ -268,7 +268,7 @@ For questions about this template:
 
 ---
 
-**Created by:** Claude (Anthropic)
+**Created by:** Shahid Khan
 **Version:** 1.0
 **Last Updated:** February 2026
 **License:** Free to use and modify
