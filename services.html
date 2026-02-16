@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore AmeriBus services: Standard and Premier travel options, onboard amenities, parcel shipping, and group travel packages."
+    />
+    <title>Our Services | AmeriBus USA</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/kamran-khan.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html" class="logo">Ameri<span>Bus</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="btn-nav">Manage Booking</a></li>
+      </ul>
+      <div class="burger">☰</div>
+    </header>
+
+    <!-- SERVICES HERO -->
+    <section class="services-hero">
+      <h1>Travel Tailored to You</h1>
+      <p>
+        From budget-friendly city hops to luxury interstate journeys—we have
+        options for every traveler.
+      </p>
+    </section>
+
+    <!-- SERVICE TIERS -->
+    <section class="section-padding">
+      <center>
+        <h2 style="color: var(--primary); font-size: 2.5rem;">Choose Your Way to Ride</h2>
+        <p style="color: var(--gray); max-width: 600px; margin: 1rem auto 0;">
+          Whether you're budget-conscious or seeking premium comfort, we have
+          the perfect travel option for you.
+        </p>
+      </center>
+      <div class="tier-container">
+        <!-- STANDARD TIER -->
+        <div class="tier-card">
+          <div class="tier-header">
+            <h3>Ameri-Standard</h3>
+            <p>The smartest way to save</p>
+            <div style="font-size: 2.5rem; margin-top: 1rem; font-weight: 800;">
+              From $15
+            </div>
+            <small>per trip</small>
+          </div>
+          <div class="tier-body">
+            <ul>
+              <li>Comfortable reclining high-back seats with adjustable headrests</li>
+              <li>Standard Wi-Fi for basic browsing and email</li>
+              <li>1 Carry-on + 1 Stored bag included (up to 50 lbs)</li>
+              <li>Climate-controlled cabin with individual air vents</li>
+              <li>USB charging ports every two seats</li>
+              <li>Panoramic windows for scenic views</li>
+              <li>Onboard restrooms cleaned hourly</li>
+              <li>Free route changes up to 24 hours before departure</li>
+              <li>Mobile boarding pass option</li>
+            </ul>
+            <div style="margin-top: 2rem;">
+              <button
+                class="btn-main"
+                style="background: var(--primary)"
+                onclick="showNotification('Standard tier selected! Searching available routes...', 'info')"
+              >
+                Select Standard
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREMIER TIER -->
+        <div class="tier-card">
+          <div class="tier-header business">
+            <h3>Ameri-Premier</h3>
+            <p>Luxury for the long haul</p>
+            <div style="font-size: 2.5rem; margin-top: 1rem; font-weight: 800;">
+              From $35
+            </div>
+            <small>per trip</small>
+          </div>
+          <div class="tier-body">
+            <ul>
+              <li>Extra-wide leather seating with 40" pitch (4" more legroom)</li>
+              <li>Unlimited High-Speed Wi-Fi for streaming and video calls</li>
+              <li>2 Stored bags included (up to 60 lbs each)</li>
+              <li>Priority boarding access—board first, every time</li>
+              <li>Personal 110V power outlet at every seat</li>
+              <li>Complimentary bottled water and snack pack</li>
+              <li>Access to Premier lounges at major stations</li>
+              <li>Free same-day changes and cancellations</li>
+              <li>Dedicated customer service hotline</li>
+              <li>Exclusive loyalty rewards program (2x points)</li>
+              <li>Noise-canceling environment in Premium section</li>
+            </ul>
+            <div style="margin-top: 2rem;">
+              <button
+                class="btn-main"
+                onclick="showNotification('Premier tier selected! Searching available routes...', 'success')"
+              >
+                Select Premier
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="section-padding" style="background: var(--light);">
+      <div class="section-title">
+        <h2>Feature Comparison</h2>
+        <p>See exactly what's included with each service tier</p>
+      </div>
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; max-width: 900px; margin: 0 auto; background: white; border-radius: 10px; overflow: hidden;">
+          <thead>
+            <tr style="background: var(--dark); color: white;">
+              <th style="padding: 1.5rem; text-align: left; border-right: 1px solid #333;">Feature</th>
+              <th style="padding: 1.5rem; text-align: center; border-right: 1px solid #333;">Standard</th>
+              <th style="padding: 1.5rem; text-align: center;">Premier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 1rem; font-weight: 600;">Wi-Fi</td>
+              <td style="padding: 1rem; text-align: center;">Basic</td>
+              <td style="padding: 1rem; text-align: center; color: var(--secondary); font-weight: 600;">High-Speed</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
+              <td style="padding: 1rem; font-weight: 600;">Seat Pitch</td>
+              <td style="padding: 1rem; text-align: center;">36"</td>
+              <td style="padding: 1rem; text-align: center; color: var(--secondary); font-weight: 600;">40"</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 1rem; font-weight: 600;">Power Outlets</td>
+              <td style="padding: 1rem; text-align: center;">USB (shared)</td>
+              <td style="padding: 1rem; text-align: center; color: var(--secondary); font-weight: 600;">110V + USB</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
+              <td style="padding: 1rem; font-weight: 600;">Baggage Allowance</td>
+              <td style="padding: 1rem; text-align: center;">2 bags (50 lbs)</td>
+              <td style="padding: 1rem; text-align: center; color: var(--secondary); font-weight: 600;">2 bags (60 lbs)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 1rem; font-weight: 600;">Priority Boarding</td>
+              <td style="padding: 1rem; text-align: center;">—</td>
+              <td style="padding: 1rem; text-align: center;">✓</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
+              <td style="padding: 1rem; font-weight: 600;">Lounge Access</td>
+              <td style="padding: 1rem; text-align: center;">—</td>
+              <td style="padding: 1rem; text-align: center;">✓</td>
+            </tr>
+            <tr style="background: #f9f9f9;">
+              <td style="padding: 1rem; font-weight: 600;">Free Cancellation</td>
+              <td style="padding: 1rem; text-align: center;">48 hrs</td>
+              <td style="padding: 1rem; text-align: center; color: var(--secondary); font-weight: 600;">24 hrs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- AMENITIES SECTION -->
+    <section class="section-padding amenities">
+      <h2 style="color: var(--primary); font-size: 2.5rem;">Onboard Amenities</h2>
+      <p style="color: var(--gray); margin-bottom: 3rem;">
+        Every AmeriBus journey includes these standard features
+      </p>
+      <div class="amenity-grid">
+        <div class="amenity-item">
+          <strong>🛜 Free Wi-Fi</strong>
+          <p>
+            Stay productive or stream shows throughout your trip. Basic on
+            Standard, high-speed on Premier.
+          </p>
+        </div>
+        <div class="amenity-item">
+          <strong>🔌 Power Outlets</strong>
+          <p>
+            Keep your devices charged with USB ports (Standard) or universal
+            110V outlets (Premier).
+          </p>
+        </div>
+        <div class="amenity-item">
+          <strong>🚻 Onboard Restrooms</strong>
+          <p>
+            Clean and accessible facilities on every bus, professionally
+            serviced at each stop.
+          </p>
+        </div>
+        <div class="amenity-item">
+          <strong>💺 Extra Legroom</strong>
+          <p>
+            Industry-leading space between seats—36" Standard, 40" Premier—for
+            maximum comfort.
+          </p>
+        </div>
+        <div class="amenity-item">
+          <strong>❄️ Climate Control</strong>
+          <p>
+            Individual air vents at every seat plus central HVAC ensure perfect
+            temperature year-round.
+          </p>
+        </div>
+        <div class="amenity-item">
+          <strong>📱 Mobile Tickets</strong>
+          <p>
+            No need to print—just show your digital boarding pass on your phone
+            and board instantly.
+          </p>
+        </div>
+        <div class="amenity-item">
+          <strong>🧼 Sanitization</strong>
+          <p>
+            HEPA air filtration and electrostatic deep-cleaning between every
+            trip for your safety.
+          </p>
+        </div>
+        <div class="amenity-item">
+          <strong>📍 GPS Tracking</strong>
+          <p>
+            Track your bus in real-time via our app. Get arrival notifications
+            and route updates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP TRAVEL -->
+    <section class="section-padding">
+      <div class="parcel-box" style="background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);">
+        <div class="parcel-text">
+          <span
+            style="
+              color: var(--secondary);
+              font-weight: bold;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+            >Perfect for Groups</span
+          >
+          <h2 style="margin: 1rem 0; color: var(--primary);">
+            Charter & Group Services
+          </h2>
+          <p style="color: var(--gray); line-height: 1.8;">
+            Planning a team outing, church trip, school excursion, or corporate
+            event? Our group services offer customized itineraries, dedicated
+            coaches, and special rates for parties of 10 or more.
+          </p>
+          <ul style="margin: 1.5rem 0; margin-left: 1.5rem; color: var(--gray);">
+            <li>Discounts starting at 15% for groups of 10+</li>
+            <li>Private coach charters available (up to 56 passengers)</li>
+            <li>Flexible pickup and drop-off locations</li>
+            <li>Dedicated group coordinator</li>
+            <li>Custom meal and rest stop arrangements</li>
+          </ul>
+          <button
+            style="
+              padding: 0.8rem 1.5rem;
+              background: var(--primary);
+              color: white;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 1rem;
+            "
+            onclick="showNotification('Thank you! Our group travel team will contact you within 24 hours.', 'success')"
+          >
+            Request Group Quote
+          </button>
+        </div>
+        <div class="parcel-img">
+          <img
+            src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80"
+            alt="Group Travel"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCEL SERVICE SECTION -->
+    <section class="section-padding" style="background: var(--light);">
+      <div class="parcel-box">
+        <div class="parcel-text">
+          <span
+            style="
+              color: var(--secondary);
+              font-weight: bold;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+            >More than passengers</span
+          >
+          <h2 style="margin: 1rem 0; color: var(--primary);">
+            Ameri-Parcel Express
+          </h2>
+          <p style="color: var(--gray); line-height: 1.8;">
+            Need to send a package across state lines fast and affordably? Our
+            bus network doubles as a rapid shipping service. Drop off at any
+            station and have your parcel delivered to another city station the
+            same day or next day.
+          </p>
+          <div style="margin: 1.5rem 0;">
+            <h4 style="color: var(--primary); margin-bottom: 0.5rem;">
+              Features:
+            </h4>
+            <ul style="margin-left: 1.5rem; color: var(--gray);">
+              <li>Same-day delivery on most routes</li>
+              <li>Up to 100 lbs per package</li>
+              <li>Full tracking via web and mobile app</li>
+              <li>Station-to-station or door-to-door options</li>
+              <li>Rates starting at just $25</li>
+            </ul>
+          </div>
+          <button
+            style="
+              padding: 0.8rem 1.5rem;
+              background: var(--primary);
+              color: white;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 1rem;
+            "
+            onclick="showNotification('Redirecting to parcel shipping calculator...', 'info')"
+          >
+            Check Shipping Rates
+          </button>
+        </div>
+        <div class="parcel-img">
+          <img
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+            alt="Shipping Packages"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL SERVICES -->
+    <section class="section-padding">
+      <div class="section-title">
+        <h2>Additional Travel Services</h2>
+        <p>Making your journey even more convenient</p>
+      </div>
+      <div class="route-grid">
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎫</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            AmeriBus Pass
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            Unlimited travel for 7, 14, or 30 days. Perfect for explorers,
+            students, and frequent travelers. Starting at $199.
+          </p>
+        </div>
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏨</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Hotel Packages
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            Book your bus ticket + hotel stay together and save up to 25%.
+            Partnered with over 5,000 properties nationwide.
+          </p>
+        </div>
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">⭐</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Loyalty Rewards
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            Earn points on every trip and redeem for free travel, upgrades, and
+            exclusive perks. Join free today!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo" style="color: white"
+            >Ameri<span>Bus</span></a
+          >
+          <p style="margin-top: 1rem; color: #ccc; font-size: 0.9rem">
+            Leading the way in sustainable and affordable interstate travel
+            across the United States since 1998.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Travel Info</h4>
+          <ul>
+            <li><a href="#">Station Finder</a></li>
+            <li><a href="#">Bus Tracker</a></li>
+            <li><a href="#">Baggage Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.8rem; color: #ccc; margin-bottom: 1rem">
+            Get exclusive deals sent to your inbox.
+          </p>
+          <input
+            type="email"
+            placeholder="Your Email"
+            style="
+              width: 100%;
+              padding: 0.7rem;
+              border-radius: 5px;
+              border: none;
+            "
+          />
+        </div>
+      </div>
+      <center
+        style="
+          border-top: 1px solid #333;
+          padding-top: 2rem;
+          margin-top: 2rem;
+          color: #777;
+          font-size: 0.8rem;
+        "
+      >
+        &copy; 2026 AmeriBus Services Inc. All Rights Reserved.
+      </center>
+    </footer>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>

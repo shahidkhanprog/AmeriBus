@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact AmeriBus customer support. Available 24/7 for booking assistance, refunds, lost baggage, and general inquiries."
+    />
+    <title>Contact Us | AmeriBus USA</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/kamran-khan.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html" class="logo">Ameri<span>Bus</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="#" class="btn-nav">Manage Booking</a></li>
+      </ul>
+      <div class="burger">☰</div>
+    </header>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <h1>Contact Our Support Team</h1>
+      <p>Available 24/7 for all your travel inquiries and assistance.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding">
+      <div class="contact-container">
+        <!-- INFO COLUMN -->
+        <div class="info-col">
+          <h2>Get in Touch</h2>
+          <p style="margin-bottom: 2rem">
+            Whether you have a question about baggage policies, need to change a
+            ticket, want to discuss corporate travel packages, or simply need
+            directions to a station—we're here to help 24 hours a day, 7 days a
+            week.
+          </p>
+
+          <div class="contact-method">
+            <h4>📍 Main Headquarters</h4>
+            <p>123 Transit Plaza, Dallas, TX 75201</p>
+            <small style="color: var(--gray); display: block; margin-top: 0.5rem;">
+              Walk-in hours: Mon-Fri 8:00 AM - 6:00 PM CST
+            </small>
+          </div>
+
+          <div class="contact-method">
+            <h4>📞 Customer Support Hotline</h4>
+            <p>+92 336 4438758</p>
+            <small style="color: var(--gray); display: block; margin-top: 0.5rem;">
+              Toll-free from US & Canada • 24/7 availability
+            </small>
+          </div>
+
+          <div class="contact-method">
+            <h4>📧 Email Support</h4>
+            <p>kk3322615@gmail.com</p>
+            <small style="color: var(--gray); display: block; margin-top: 0.5rem;">
+              Typical response time: 2-4 hours
+            </small>
+          </div>
+
+          <div class="contact-method">
+            <h4>💬 Live Chat</h4>
+            <p>Available on our website & mobile app</p>
+            <small style="color: var(--gray); display: block; margin-top: 0.5rem;">
+              Instant help 24/7
+            </small>
+          </div>
+
+          <div class="contact-method">
+            <h4>⏰ Station Office Hours</h4>
+            <p>
+              Online Support: 24/7<br />
+              Station Offices: 6:00 AM - 11:00 PM Local Time
+            </p>
+          </div>
+
+          <div class="contact-method">
+            <h4>🌐 Social Media</h4>
+            <p style="display: flex; gap: 1rem; align-items: center; margin-top: 0.5rem;">
+              <a href="#" style="color: var(--primary); font-size: 1.5rem; text-decoration: none;">📘</a>
+              <a href="#" style="color: var(--primary); font-size: 1.5rem; text-decoration: none;">🐦</a>
+              <a href="#" style="color: var(--primary); font-size: 1.5rem; text-decoration: none;">📸</a>
+              <a href="#" style="color: var(--primary); font-size: 1.5rem; text-decoration: none;">💼</a>
+            </p>
+            <small style="color: var(--gray); display: block; margin-top: 0.5rem;">
+              @AmeriBusUSA on all platforms
+            </small>
+          </div>
+        </div>
+
+        <!-- FORM COLUMN -->
+        <div class="form-card">
+          <h3 style="color: var(--primary); margin-bottom: 1.5rem;">
+            Send Us a Message
+          </h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Phone Number (Optional)</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+1 (555) 123-4567"
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Inquiry Type *</label>
+              <select name="inquiry" required>
+                <option value="">Select an option</option>
+                <option value="booking">Booking Assistance</option>
+                <option value="refund">Refund Request</option>
+                <option value="baggage">Lost or Delayed Baggage</option>
+                <option value="schedule">Schedule Information</option>
+                <option value="group">Group Travel Quote</option>
+                <option value="parcel">Parcel Shipping</option>
+                <option value="corporate">Corporate Accounts</option>
+                <option value="feedback">General Feedback</option>
+                <option value="complaint">File a Complaint</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Booking Reference (if applicable)</label>
+              <input
+                type="text"
+                name="booking"
+                placeholder="AMB123456789"
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Please provide as much detail as possible about your inquiry. Include dates, route information, or booking numbers if relevant."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                <input type="checkbox" style="width: auto;" required />
+                <span>I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#" style="color: var(--primary);">Privacy Policy</a></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--gray); text-align: center;">
+              By submitting this form, you consent to AmeriBus contacting you via
+              email or phone regarding your inquiry.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK HELP SECTION -->
+    <section class="section-padding" style="background: var(--light);">
+      <div class="section-title">
+        <h2>Quick Help Topics</h2>
+        <p>Find answers to common questions instantly</p>
+      </div>
+      <div class="route-grid">
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start; cursor: pointer;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">🎫</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Booking & Tickets
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            How to book, modify, or cancel tickets. Print vs. mobile boarding
+            passes. Group discounts.
+          </p>
+        </div>
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start; cursor: pointer;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">🧳</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Baggage Policies
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            Weight limits, prohibited items, oversized luggage fees, and what to
+            do if your bag is lost.
+          </p>
+        </div>
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start; cursor: pointer;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">♿</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Accessibility
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            ADA-compliant buses, wheelchair assistance, service animal policies,
+            and special accommodations.
+          </p>
+        </div>
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start; cursor: pointer;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">💰</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Refunds & Credits
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            Cancellation policies, refund timelines, travel credit usage, and
+            ticket transfer options.
+          </p>
+        </div>
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start; cursor: pointer;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">🚌</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Bus Tracking
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            How to track your bus in real-time, receive delay notifications, and
+            check arrival times.
+          </p>
+        </div>
+        <div class="route-card" style="flex-direction: column; padding: 2rem; align-items: flex-start; cursor: pointer;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">🎓</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">
+            Student Discounts
+          </h3>
+          <p style="color: var(--gray); line-height: 1.8;">
+            15% off for students with valid ID. Learn how to verify your status
+            and apply discounts at checkout.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d466.697914334737!2d72.3642021988223!3d34.816358676370776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc3d55e488d82d%3A0x1214ff80be146f01!2sBright%20Future%20Academy!5e1!3m2!1sen!2s!4v1771160522451!5m2!1sen!2s"
+        height="100%"
+        width="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- EMERGENCY CONTACT -->
+    <section class="section-padding">
+      <div class="parcel-box" style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);">
+        <div style="flex: 1;">
+          <h2 style="color: var(--primary); margin-bottom: 1rem;">
+            🚨 Emergency Assistance
+          </h2>
+          <p style="color: var(--gray); line-height: 1.8; margin-bottom: 1rem;">
+            If you're experiencing a travel emergency—such as a medical issue on
+            board, a safety concern, or you're stranded at a station—please call
+            our 24/7 emergency hotline immediately:
+          </p>
+          <div
+            style="
+              background: var(--white);
+              padding: 1.5rem;
+              border-radius: 10px;
+              border-left: 4px solid var(--secondary);
+            "
+          >
+            <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">
+              Emergency Hotline
+            </h3>
+            <p style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">
+              +92 336 4438758
+            </p>
+            <small style="color: var(--gray);">
+              Available 24/7 • Response time: Immediate
+            </small>
+          </div>
+          <p style="color: var(--gray); margin-top: 1rem; font-size: 0.9rem;">
+            For non-emergencies, please use the contact form above or our
+            standard support channels.
+          </p>
+        </div>
+        <div style="flex: 1; text-align: center; font-size: 8rem;">
+          🚑
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo" style="color: white"
+            >Ameri<span>Bus</span></a
+          >
+          <p style="margin-top: 1rem; color: #ccc; font-size: 0.9rem">
+            Leading the way in sustainable and affordable interstate travel
+            across the United States since 1998.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Travel Info</h4>
+          <ul>
+            <li><a href="#">Station Finder</a></li>
+            <li><a href="#">Bus Tracker</a></li>
+            <li><a href="#">Baggage Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.8rem; color: #ccc; margin-bottom: 1rem">
+            Get exclusive deals sent to your inbox.
+          </p>
+          <input
+            type="email"
+            placeholder="Your Email"
+            style="
+              width: 100%;
+              padding: 0.7rem;
+              border-radius: 5px;
+              border: none;
+            "
+          />
+        </div>
+      </div>
+      <center
+        style="
+          border-top: 1px solid #333;
+          padding-top: 2rem;
+          margin-top: 2rem;
+          color: #777;
+          font-size: 0.8rem;
+        "
+      >
+        &copy; 2026 AmeriBus Services Inc. All Rights Reserved.
+      </center>
+    </footer>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
